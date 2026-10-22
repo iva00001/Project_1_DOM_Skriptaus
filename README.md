@@ -5,6 +5,9 @@ TODO – Post-it Taulu
 
 Yksinkertainen TODO-sovellus, joka on toteutettu natiivilla JavaScriptillä.
 
+Projekti sivu
+https://iva00001.github.io/Project_1_DOM_Skriptaus/
+
 Ominaisuudet
 - Tehtävien lisääminen lomakkeella (nimi, prioriteetti, eräpäivä)
 - Syötteen validointi (tyhjä, liian lyhyt)
