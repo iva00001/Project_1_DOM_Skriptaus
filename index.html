@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
+    <title>TODO – Post-it Taulu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>📝 Post-it Taulu</h1>
+    </header>
 
-<h1>My First Heading</h1>
-<p>Hello, World!</p>
+    <main>
+        <form id="todoForm" novalidate>
+            <div>
+                <label for="taskInput">Tehtävä:</label>
+                <input type="text" id="taskInput" maxlength="100" autocomplete="off">
+                <small id="taskError" style="color:#e74c3c;"></small>
+            </div>
+            <div>
+                <label for="prioritySelect">Prioriteetti:</label>
+                <select id="prioritySelect">
+                    <option value="normal">Normaali</option>
+                    <option value="high">Korkea</option>
+                    <option value="low">Matala</option>
+                </select>
+            </div>
+            <div>
+                <label for="dueDate">Eräpäivä:</label>
+                <input type="date" id="dueDate">
+            </div>
+            <button type="submit">➕ Lisää tehtävä</button>
+        </form>
 
+        <div>
+            <span id="activeCount">0</span> aktiivista
+            <button type="button" class="filter-btn active" data-filter="all">Kaikki</button>
+            <button type="button" class="filter-btn" data-filter="active">Aktiiviset</button>
+            <button type="button" class="filter-btn" data-filter="done">Tehdyt</button>
+            <button type="button" id="clearDoneBtn">🗑️ Tyhjennä tehdyt</button>
+        </div>
+
+        <ul id="todoList"></ul>
+        <p id="emptyMessage">Ei tehtäviä vielä.</p>
+    </main>
 </body>
 </html>
