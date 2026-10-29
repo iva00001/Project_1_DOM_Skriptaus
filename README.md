@@ -20,3 +20,9 @@ Teknologiat
 - HTML5
 - CSS3
 - JavaScript
+
+
+Paritestaus:
+
+- Kannattaa lisätä prioriteetti näkyväksi tehtäviin.
+- Ja laittaa poisto nappi reunaan, eikä heti tehtävän jälkeen
